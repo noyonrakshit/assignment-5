@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mac-Book</title>
+  <!-- tailwind link  -->
+  <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet" />
+</head>
+
+<body>
+  <section>
+    <div class="grid-cols-2 flex gap-16 p-16 w-9/12 mx-auto">
+      <div>
+        <img src="images/mac.png" alt="" />
+      </div>
+      <div>
+        <!-- mac info -->
+        <div class="mb-8">
+          <h1 class="text-3xl mb-4 font-medium">
+            Customize your Blue 24-inch iMac with Apple M1 chip
+          </h1>
+          <p>
+            Trade‑in values will vary based on the condition, year, and
+            configuration of your trade‑in device. You must be at least 18
+            years old to be eligible to trade in for credit or for an Apple
+            Gift Card. Not all devices are eligible for credit. reason
+          </p>
+        </div>
+
+        <!-- Memory input fild -->
+
+        <h3 class="font-bold">Memory</h3>
+        <div class="mb-8 flex">
+          <p id="free-memory" class="p-2 border-2 rounded mr-1">8GB unified memory</p>
+          <p id="paid-memory" class="p-2 border-2 rounded mr-1">16GB unified memory</p>
+        </div>
+        <!-- Storage input fild -->
+
+        <h3 class="font-bold">Storage</h3>
+        <div class="mb-8 flex">
+          <p id="free-ssd" class="p-2 border-2 rounded mr-1 ">254GB SSD Storage</p>
+          <p id="paid-ssd" class="p-2 border-2 rounded mr-1">512GB SSD Storage</p>
+          <p id="paid-1tb" class="p-2 border-2 rounded">1TB SSD Storage</p>
+        </div>
+        <!-- delivary option fild -->
+
+        <h3 class="font-bold">Choose Your delivary option</h3>
+        <div class="mb-8 flex">
+          <p id="free-delivary" class="p-2 border-2 rounded mr-1">
+            Friday, Aug 25 Free Prime Delivary
+          </p>
+          <p id="paid-delivary" class="p-2 border-2 rounded">
+            Friday, Aug 21 Delivary charg $20
+          </p>
+        </div>
+
+        <!-- cost product option  -->
+        <div>
+          <h3 class="font-medium">Best Price:$<span id="product-price">1299</span></h3>
+          <h3 class="font-medium">Extra Memory Cost: $<span id="const-memory">0</span></h3>
+          <h3 class="font-medium">Extra Storage Cost: $<span id="count-ssd">0</span></h3>
+          <h3 class="font-medium">Delivary Charge: $<span id="count-delivary">0</span></h3>
+          <hr />
+          <h3 class="font-medium">Total: $<span id="total-price">1299</span></h3>
+          <!-- promo code  -->
+          <!-- problem -->
+          <h3 class="font-normal mb-1">Add pomo code</h3>
+          <h3>discount: $<span id="total-discount">0</span></h3>
+
+          <input id="discount-input" type="text" class="p-1 border-2 rounded" />
+          <button id="apply-btn" class="bg-pink-500 text-white px-4 py-2 rounded">
+            Apply
+          </button>
+        </div>
+      </div>
+      <hr />
+  </section>
+  <!-- problem  -->
+  <!-- footer option  -->
+  <footer class="text-center">
+    <h1 class="font-bold text-3xl">Total:$<span id="soldout-price">1299</span></h1>
+  </footer>
+  <script src="js/book.js"></script>
+</body>
+
+</html>
